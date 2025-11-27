@@ -62,9 +62,9 @@ npm install
 # Start development server
 npm run dev
 ```
-ذذذ
-**📦 Project Structure**
 ---
+**📦 Project Structure**
+```bash
 weather-app/
 ├── public/             # Static files
 │   └── index.html
@@ -79,6 +79,7 @@ weather-app/
 ├── .gitignore
 ├── vite.config.js
 └── README.md
+```
 💡 Usage Guide
 
 Open the app. Your current location’s weather will load automatically.
