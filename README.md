@@ -79,7 +79,8 @@ weather-app/
 ├── .gitignore
 ├── vite.config.js
 └── README.md
-```---
+```
+---
 
 ## 💡 Usage Guide
 
