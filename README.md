@@ -61,9 +61,10 @@ npm install
 
 # Start development server
 npm run dev
-
+```
+ذذذ
 **📦 Project Structure**
-
+---
 weather-app/
 ├── public/             # Static files
 │   └── index.html
