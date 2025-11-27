@@ -79,8 +79,9 @@ weather-app/
 ├── .gitignore
 ├── vite.config.js
 └── README.md
-```
-💡 Usage Guide
+```---
+
+## 💡 Usage Guide
 
 Open the app. Your current location’s weather will load automatically.
 
@@ -90,7 +91,9 @@ View current weather, wind, humidity, and 5-day forecast.
 
 The interface adjusts to all screen sizes for a smooth experience.
 
-🌟 Design Highlights
+---
+
+## 🌟 Design Highlights
 
 ✨ Minimal & cinematic interface
 
@@ -100,7 +103,9 @@ The interface adjusts to all screen sizes for a smooth experience.
 
 💾 Quick access to city search and forecast
 
-🧭 Future Enhancements
+---
+
+## 🧭 Future Enhancements
 
 ⏰ Add hourly forecast charts
 
@@ -110,13 +115,17 @@ The interface adjusts to all screen sizes for a smooth experience.
 
 🌓 Light/Dark theme toggle
 
-📜 License
+---
+
+## 📜 License
 
 This project is open source and available under the MIT License.
 
-👨‍💻 Developer
+---
+
+## 👨‍💻 Developer
 
 Built with ❤️ by Mohamed Elshazly
 
-GitHub Profile: https://github.com/MohamedAhmedElshazly
+GitHub Profile: [https://github.com/MohamedAhmedElshazly](https://github.com/MohamedAhmedElshazly)
 
