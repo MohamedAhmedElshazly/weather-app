@@ -2,7 +2,7 @@
 
 A simple, elegant, and responsive weather application built with **React** and **Vite**. Search for any city to see the weather forecast, or automatically detect your current location using geolocation for instant weather updates!  
 
-✨ **Features**
+## ✨ Features
 
 🌍 **Search Any City** – Type a city name to get the current weather and forecast.  
 
@@ -18,7 +18,7 @@ A simple, elegant, and responsive weather application built with **React** and *
 
 ---
 
-🛠️ **Tech Stack Core**
+## 🛠️ Tech Stack Core
 
 ⚛️ **React 18** – For building a dynamic and interactive UI  
 
@@ -32,7 +32,7 @@ A simple, elegant, and responsive weather application built with **React** and *
 
 ---
 
-**Development Tools**  
+## Development Tools  
 
 🔄 **ESLint** – Code consistency and quality  
 
@@ -40,14 +40,14 @@ A simple, elegant, and responsive weather application built with **React** and *
 
 ---
 
-🚀 **Getting Started**
+## 🚀 Getting Started
 
 **Prerequisites**  
 
 - Node.js (v16 or above)  
 - npm or yarn  
-
-**Installation**  
+---
+## Installation  
 
 ```bash
 # Clone the repository
@@ -63,7 +63,7 @@ npm install
 npm run dev
 ```
 ---
-**📦 Project Structure**
+## 📦 Project Structure
 ```bash
 weather-app/
 ├── public/             # Static files
