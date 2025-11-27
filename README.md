@@ -1,17 +1,63 @@
-# React + Vite
+# Weather App – Check Weather Anywhere
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, elegant, and responsive weather application built with **React** and **Vite**. Search for any city to see the weather forecast, or automatically detect your current location using geolocation for instant weather updates!  
 
-Currently, two official plugins are available:
+✨ **Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌍 **Search Any City** – Type a city name to get the current weather and forecast.  
 
-## React Compiler
+📍 **Geolocation Detection** – Automatically shows the weather for your current location when you open the app.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+☀️ **Current Weather Details** – Temperature, weather condition, wind speed, humidity, and more.  
 
-## Expanding the ESLint configuration
+📅 **Daily Forecast** – See a 5-day weather forecast for your selected city.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# weather-app" 
+🌙 **Responsive & Modern Design** – Works perfectly on mobile, tablet, and desktop.  
+
+🖌️ **Dynamic Styling** – Clean, cinematic-style UI with a dark theme.  
+
+---
+
+🛠️ **Tech Stack Core**
+
+⚛️ **React 18** – For building a dynamic and interactive UI  
+
+⚡ **Vite** – Super-fast build tool  
+
+🧩 **Context API / useState / useEffect** – For state management  
+
+💅 **Bootstrap 5** – For responsive design and layout  
+
+🎨 **CSS & Theming** – Custom styles for cinematic dark theme  
+
+---
+
+**Development Tools**  
+
+🔄 **ESLint** – Code consistency and quality  
+
+🎯 **Prettier** – Clean and formatted code  
+
+---
+
+🚀 **Getting Started**
+
+**Prerequisites**  
+
+- Node.js (v16 or above)  
+- npm or yarn  
+
+**Installation**  
+
+```bash
+# Clone the repository
+git clone https://github.com/MohamedAhmedElshazly/weather-app.git
+
+# Navigate to project folder
+cd weather-app
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
