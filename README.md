@@ -61,3 +61,60 @@ npm install
 
 # Start development server
 npm run dev
+
+📦 Project Structure
+
+weather-app/
+├── public/             # Static files
+│   └── index.html
+├── src/
+│   ├── components/     # Reusable components (MainWeatherCard, SearchBar, DailyForecast, etc.)
+│   ├── context/        # Weather & Theme context
+│   ├── App.jsx         # Root component
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Global styles
+├── package.json        # Dependencies and scripts
+├── package-lock.json
+├── .gitignore
+├── vite.config.js
+└── README.md
+💡 Usage Guide
+
+Open the app. Your current location’s weather will load automatically.
+
+Use the search bar to look up any city.
+
+View current weather, wind, humidity, and 5-day forecast.
+
+The interface adjusts to all screen sizes for a smooth experience.
+
+🌟 Design Highlights
+
+✨ Minimal & cinematic interface
+
+📱 Fully responsive layout
+
+🎨 Smooth hover and focus effects
+
+💾 Quick access to city search and forecast
+
+🧭 Future Enhancements
+
+⏰ Add hourly forecast charts
+
+🌡️ Switch between Celsius and Fahrenheit
+
+☁️ Connect to backend or Firebase for user preferences
+
+🌓 Light/Dark theme toggle
+
+📜 License
+
+This project is open source and available under the MIT License.
+
+👨‍💻 Developer
+
+Built with ❤️ by Mohamed Elshazly
+
+GitHub Profile: https://github.com/MohamedAhmedElshazly
+
