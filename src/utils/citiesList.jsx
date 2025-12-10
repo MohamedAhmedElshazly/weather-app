@@ -209,6 +209,7 @@ const cities = {
   'Burullus': { ar: 'البرلس', en: 'Burullus' },
   'Hamol': { ar: 'الحامول', en: 'Hamol' },
   'Riadh': { ar: 'الرياض', en: 'Riadh' },
+  'Balţīm':{ar:'بلطيم' , en:'Baltem'},
 
   // --- مراكز البحيرة ---
   'Damanhur': { ar: 'دمنهور', en: 'Damanhur' },

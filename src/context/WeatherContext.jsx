@@ -20,19 +20,27 @@ export const WeatherProvider = ({ children }) => {
   const [showLocationDialog, setShowLocationDialog] = useState(false);
   const [unit, setUnit] = useState('celsius');
 
-  useEffect(() => {
-    // نشوف لو في موقع محفوظ من الجيولوكيشن
-    const lastLocation = localStorage.getItem('lastLocation');
-    
-    if (lastLocation) {
-      // لو دخل قبل كده وسمح بالموقع → نعرض آخر موقع من الجيولوكيشن
-      const { lat, lon } = JSON.parse(lastLocation);
-      getWeatherByCoords(lat, lon);
-    } else {
-      // أول مرة → نعرض مربع السماح بالموقع
-      setShowLocationDialog(true);
-    }
-  }, []);
+
+useEffect(() => {
+  const lastLocation = localStorage.getItem('lastLocation');
+  const askedBefore = localStorage.getItem('askedLocation');
+
+  // أول زيارة للجهاز → لسه ما سألناش
+  if (!askedBefore) {
+    setShowLocationDialog(true);
+    localStorage.setItem('askedLocation', 'true'); // علّم إنه اتسأل
+    return;
+  }
+
+  // لو سألناه قبل كده → نستخدم آخر إحداثيات أو القاهرة
+  if (lastLocation) {
+    const { lat, lon } = JSON.parse(lastLocation);
+    getWeatherByCoords(lat, lon);
+  } else {
+    searchCity('Cairo');
+  }
+}, []);
+
 
   const toggleUnit = (value) => {
     setUnit(value);
@@ -63,6 +71,7 @@ export const WeatherProvider = ({ children }) => {
   const getCurrentLocation = () => {
     setLoading(true);
     setError(null);
+
     
     if (!navigator.geolocation) {
       setError('Geolocation is not supported by your browser');
@@ -96,7 +105,8 @@ export const WeatherProvider = ({ children }) => {
             lat: latitude,
             lon: longitude
           }));
-          
+
+          localStorage.removeItem('askedLocation');
           setShowLocationDialog(false);
         } catch (err) {
           setError('Failed to fetch weather data');
@@ -164,18 +174,20 @@ export const WeatherProvider = ({ children }) => {
     }
   };
 
-  const denyLocation = () => {
-    setShowLocationDialog(false);
-    
-    // ✅ لو رفض → نرجع آخر موقع من الجيولوكيشن أو القاهرة
-    const lastLocation = localStorage.getItem('lastLocation');
-    if (lastLocation) {
-      const { lat, lon } = JSON.parse(lastLocation);
-      getWeatherByCoords(lat, lon);
-    } else {
-      searchCity('Cairo');
-    }
-  };
+const denyLocation = () => {
+  setShowLocationDialog(false);
+
+  localStorage.removeItem('askedLocation');
+
+      // ✅ لو رفض → نرجع آخر موقع من الجيولوكيشن أو القاهرة
+  const lastLocation = localStorage.getItem('lastLocation');
+  if (lastLocation) {
+    const { lat, lon } = JSON.parse(lastLocation);
+    getWeatherByCoords(lat, lon);
+  } else {
+    searchCity('Cairo');
+  }
+};
 
   const value = {
     weatherData,

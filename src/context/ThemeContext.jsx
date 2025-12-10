@@ -16,7 +16,7 @@ export const useTheme = () => {
 export const ThemeProvider = ({ children }) => {
   const { i18n } = useTranslation();
   const [darkMode, setDarkMode] = useState(true);
-  const [unit, setUnit] = useState('celsius'); // ✅ وحدة درجة الحرارة: celsius أو fahrenheit
+  const [unit, setUnit] = useState('celsius'); 
 
   useEffect(() => {
     document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
